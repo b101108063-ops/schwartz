@@ -4,96 +4,95 @@
 </header>
 
 <div class="chapters-wrapper">
-    {{ $chapters := slice 
-        (dict "title" "基礎外科" "chapters" (slice
-            (dict "num" "CH01" "title" "外科領導")
-            (dict "num" "CH02" "title" "損傷的系統性反應與代謝支持")
-            (dict "num" "CH03" "title" "外科病人的液體與電解質管理")
-            (dict "num" "CH04" "title" "止血、血液保存與輸血")
-            (dict "num" "CH05" "title" "休克")
-            (dict "num" "CH06" "title" "外科感染")
+    {{ $baseUrl := "schwartz" }}
+
+    {{ $groups := slice
+        (dict "title" "基礎外科" "items" (slice
+            (dict "num" "CH01" "name" "外科領導" "file" "ch01_外科領導")
+            (dict "num" "CH02" "name" "損傷的系統性反應與代謝支持" "file" "ch02_損傷的系統性反應與代謝支持")
+            (dict "num" "CH03" "name" "外科病人的液體與電解質管理" "file" "ch03_外科病人的液體與電解質管理")
+            (dict "num" "CH04" "name" "止血、血液保存與輸血" "file" "ch04_止血")
+            (dict "num" "CH05" "name" "休克" "file" "ch05_休克")
+            (dict "num" "CH06" "name" "外科感染" "file" "ch06_外科感染")
         ))
-        (dict "title" "創傷與急症" "chapters" (slice
-            (dict "num" "CH07" "title" "創傷")
-            (dict "num" "CH08" "title" "燒傷")
-            (dict "num" "CH09" "title" "傷口癒合")
-            (dict "num" "CH10" "title" "創傷進階")
+        (dict "title" "創傷與急症" "items" (slice
+            (dict "num" "CH07" "name" "創傷" "file" "ch07_創傷")
+            (dict "num" "CH08" "name" "燒傷" "file" "ch08_燒傷")
+            (dict "num" "CH09" "name" "傷口癒合" "file" "ch09_傷口癒合")
+            (dict "num" "CH10" "name" "創傷進階" "file" "ch10_創傷進階")
         ))
-        (dict "title" "外科原則" "chapters" (slice
-            (dict "num" "CH11" "title" "手部外科")
-            (dict "num" "CH12" "title" "整形與重建外科")
-            (dict "num" "CH14" "title" "移植")
-            (dict "num" "CH15" "title" "輸血治療與圍手術期止血")
-            (dict "num" "CH16" "title" "一般免疫學")
+        (dict "title" "外科原則" "items" (slice
+            (dict "num" "CH11" "name" "手部外科" "file" "ch11_手部外科")
+            (dict "num" "CH12" "name" "整形與重建外科" "file" "ch12_整形與重建外科")
+            (dict "num" "CH14" "name" "移植" "file" "ch14_移植")
+            (dict "num" "CH15" "name" "輸血治療與圍手術期止血" "file" "ch15_輸血治療與圍手術期止血")
+            (dict "num" "CH16" "name" "一般免疫學" "file" "ch16_一般免疫學")
         ))
-        (dict "title" "腫瘤學" "chapters" (slice
-            (dict "num" "CH12" "title" "腫瘤學：致癌因素與風險評估")
-            (dict "num" "CH13" "title" "腫瘤學：治療與預防")
-            (dict "num" "CH17" "title" "外科腫瘤學")
-            (dict "num" "CH36" "title" "軟組織肉瘤")
+        (dict "title" "腫瘤學" "items" (slice
+            (dict "num" "CH12" "name" "腫瘤學：致癌因素與風險評估" "file" "ch12_腫瘤學_致癌因素與風險評估")
+            (dict "num" "CH13" "name" "腫瘤學：治療與預防" "file" "ch13_腫瘤學_治療與預防")
+            (dict "num" "CH17" "name" "外科腫瘤學" "file" "ch17_外科腫瘤學")
+            (dict "num" "CH36" "name" "軟組織肉瘤" "file" "ch36_軟組織肉瘤")
         ))
-        (dict "title" "心胸外科" "chapters" (slice
-            (dict "num" "CH19" "title" "胸壁肺縱隔與肋膜")
-            (dict "num" "CH20" "title" "先天性心臟病")
-            (dict "num" "CH21" "title" "後天性心臟病")
-            (dict "num" "CH22" "title" "胸主動脈瘤與主動脈剝離")
-            (dict "num" "CH23" "title" "動脈疾病")
-            (dict "num" "CH24" "title" "靜脈與淋巴疾病")
+        (dict "title" "心胸外科" "items" (slice
+            (dict "num" "CH19" "name" "胸壁肺縱隔與肋膜" "file" "ch19_胸壁肺縱隔與肋膜")
+            (dict "num" "CH20" "name" "先天性心臟病" "file" "ch20_先天性心臟病")
+            (dict "num" "CH21" "name" "後天性心臟病" "file" "ch21_後天性心臟病")
+            (dict "num" "CH22" "name" "胸主動脈瘤與主動脈剝離" "file" "ch22_胸主動脈瘤與主動脈剝離")
+            (dict "num" "CH23" "name" "動脈疾病" "file" "ch23_arteries")
+            (dict "num" "CH24" "name" "靜脈與淋巴疾病" "file" "ch24_靜脈與淋巴疾病")
         ))
-        (dict "title" "消化外科" "chapters" (slice
-            (dict "num" "CH25" "title" "食道與橫膈膜疝氣")
-            (dict "num" "CH26" "title" "胃")
-            (dict "num" "CH27" "title" "肥胖外科治療")
-            (dict "num" "CH28" "title" "小腸")
-            (dict "num" "CH29" "title" "結腸直腸肛門")
-            (dict "num" "CH30" "title" "闌尾")
-            (dict "num" "CH31" "title" "肝臟")
-            (dict "num" "CH32" "title" "膽囊與肝外膽道系統")
-            (dict "num" "CH33" "title" "胰臟")
-            (dict "num" "CH34" "title" "脾臟")
-            (dict "num" "CH35" "title" "腹壁與腹膜後")
-            (dict "num" "CH37" "title" "腹股溝疝氣")
+        (dict "title" "消化外科" "items" (slice
+            (dict "num" "CH25" "name" "食道與橫膈膜疝氣" "file" "ch25_食道與橫膈膜疝氣")
+            (dict "num" "CH26" "name" "胃" "file" "ch26_胃")
+            (dict "num" "CH27" "name" "肥胖外科治療" "file" "ch27_肥胖外科治療")
+            (dict "num" "CH28" "name" "小腸" "file" "ch28_小腸")
+            (dict "num" "CH29" "name" "結腸直腸肛門" "file" "ch29_結腸直腸肛門")
+            (dict "num" "CH30" "name" "闌尾" "file" "ch30_闌尾")
+            (dict "num" "CH31" "name" "肝臟" "file" "ch31_肝臟")
+            (dict "num" "CH32" "name" "膽囊與肝外膽道系統" "file" "ch32_膽囊與肝外膽道系統")
+            (dict "num" "CH33" "name" "胰臟" "file" "ch33_胰臟")
+            (dict "num" "CH34" "name" "脾臟" "file" "ch34_脾臟")
+            (dict "num" "CH35" "name" "腹壁與腹膜後" "file" "ch35_腹壁與腹膜後")
+            (dict "num" "CH37" "name" "腹股溝疝氣" "file" "ch37_腹股溝疝氣")
         ))
-        (dict "title" "內分泌外科" "chapters" (slice
-            (dict "num" "CH38" "title" "甲狀腺副甲狀腺與腎上腺")
+        (dict "title" "內分泌外科" "items" (slice
+            (dict "num" "CH38" "name" "甲狀腺副甲狀腺與腎上腺" "file" "ch38_甲狀腺副甲狀腺與腎上腺")
         ))
-        (dict "title" "小兒、婦科與泌尿" "chapters" (slice
-            (dict "num" "CH39" "title" "小兒外科學")
-            (dict "num" "CH40" "title" "泌尿外科學")
-            (dict "num" "CH41" "title" "婦科學")
+        (dict "title" "小兒、婦科與泌尿" "items" (slice
+            (dict "num" "CH39" "name" "小兒外科學" "file" "ch39_小兒外科學")
+            (dict "num" "CH40" "name" "泌尿外科學" "file" "ch40_泌尿外科學")
+            (dict "num" "CH41" "name" "婦科學" "file" "ch41_婦科學")
         ))
-        (dict "title" "神經與骨科" "chapters" (slice
-            (dict "num" "CH42" "title" "神經外科學")
-            (dict "num" "CH43" "title" "骨科學")
-            (dict "num" "CH44" "title" "手與腕部外科")
-            (dict "num" "CH45" "title" "整形與重建外科學")
+        (dict "title" "神經與骨科" "items" (slice
+            (dict "num" "CH42" "name" "神經外科學" "file" "ch42_神經外科學")
+            (dict "num" "CH43" "name" "骨科學" "file" "ch43_骨科學")
+            (dict "num" "CH44" "name" "手與腕部外科" "file" "ch44_手與腕部外科")
+            (dict "num" "CH45" "name" "整形與重建外科學" "file" "ch45_整形與重建外科學")
         ))
-        (dict "title" "進階主題" "chapters" (slice
-            (dict "num" "CH46" "title" "外科患者麻醉")
-            (dict "num" "CH47" "title" "老年外科考量")
-            (dict "num" "CH48" "title" "倫理與安寧療護")
-            (dict "num" "CH49" "title" "全球外科")
-            (dict "num" "CH50" "title" "優化圍手術期照護")
-            (dict "num" "CH51" "title" "外科實證評析與應用")
-            (dict "num" "CH52" "title" "門診手術")
-            (dict "num" "CH53" "title" "技能與模擬訓練")
-            (dict "num" "CH54" "title" "網路教育與社群媒體")
+        (dict "title" "進階主題" "items" (slice
+            (dict "num" "CH46" "name" "外科患者麻醉" "file" "ch46_外科患者麻醉")
+            (dict "num" "CH47" "name" "老年外科考量" "file" "ch47_老年外科考量")
+            (dict "num" "CH48" "name" "倫理與安寧療護" "file" "ch48_倫理與安寧療護")
+            (dict "num" "CH49" "name" "全球外科" "file" "ch49_全球外科")
+            (dict "num" "CH50" "name" "優化圍手術期照護" "file" "ch50_優化圍手術期照護")
+            (dict "num" "CH51" "name" "外科實證評析與應用" "file" "ch51_外科實證評析與應用")
+            (dict "num" "CH52" "name" "門診手術" "file" "ch52_門診手術")
+            (dict "num" "CH53" "name" "技能與模擬訓練" "file" "ch53_技能與模擬訓練")
+            (dict "num" "CH54" "name" "網路教育與社群媒體" "file" "ch54_網路教育與社群媒體")
         ))
     }}
 
-    {{ range $group := $chapters }}
+    {{ range $group := $groups }}
     <div class="chapter-group">
         <h3 class="group-title">{{ $group.title }}</h3>
         <div class="group-chapters">
-            {{ range $ch := $group.chapters }}
-                {{ $page := site.GetPage (printf "schwartz/%s*" $ch.num) }}
-                {{ if $page }}
-                <a href="{{ $page.Permalink }}" class="chapter-item">
-                    <span class="chapter-num">{{ $ch.num }}</span>
-                    <span class="chapter-name">{{ $ch.title }}</span>
-                    <span class="arrow">›</span>
-                </a>
-                {{ end }}
+            {{ range $item := $group.items }}
+            <a href="{{ $baseUrl }}/{{ $item.file }}/" class="chapter-item">
+                <span class="chapter-num">{{ $item.num }}</span>
+                <span class="chapter-name">{{ $item.name }}</span>
+                <span class="arrow">›</span>
+            </a>
             {{ end }}
         </div>
     </div>
