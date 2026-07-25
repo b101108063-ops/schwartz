@@ -1,6 +1,6 @@
-baseURL = '/'
-locale = 'zh-tw'
-theme = 'PaperMod'
+baseURL = "/schwartz/"
+locale = "zh-tw"
+theme = "PaperMod"
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
@@ -21,7 +21,7 @@ date = ["date", "publishDate", "lastmod"]
   [[menu.main]]
     identifier = "search"
     name = "搜尋"
-    url = "/search/"
+    url = "/schwartz/search/"
     weight = 20
 
 [outputs]
