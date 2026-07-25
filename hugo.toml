@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/b101108063-ops/schwartz'
+baseURL = '/'
 locale = 'zh-tw'
 theme = 'PaperMod'
 
