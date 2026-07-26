@@ -4,8 +4,6 @@
   <url>
     <loc>/schwartz/</loc>
   </url><url>
-    <loc>/schwartz/categories/</loc>
-  </url><url>
     <loc>/schwartz/schwartz/ch01_%E5%A4%96%E7%A7%91%E9%A0%98%E5%B0%8E/</loc>
   </url><url>
     <loc>/schwartz/schwartz/ch02_%E6%90%8D%E5%82%B7%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%80%A7%E5%8F%8D%E6%87%89%E8%88%87%E4%BB%A3%E8%AC%9D%E6%94%AF%E6%8C%81/</loc>
@@ -21,6 +19,8 @@
     <loc>/schwartz/schwartz/ch07_%E5%89%B5%E5%82%B7/</loc>
   </url><url>
     <loc>/schwartz/schwartz/ch08_%E7%87%92%E5%82%B7/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch09_%E5%82%B7%E5%8F%A3%E7%99%92%E5%90%88/</loc>
   </url><url>
     <loc>/schwartz/schwartz/ch10_%E5%89%B5%E5%82%B7%E9%80%B2%E9%9A%8E/</loc>
   </url><url>
@@ -43,6 +43,26 @@
     <loc>/schwartz/schwartz/ch17_%E5%A4%96%E7%A7%91%E8%85%AB%E7%98%A4%E5%AD%B8/</loc>
   </url><url>
     <loc>/schwartz/schwartz/ch18_%E5%89%B5%E5%82%B7%E9%86%AB%E5%AD%B8/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch19_%E8%83%B8%E5%A3%81%E8%82%BA%E7%B8%B1%E9%9A%94%E8%88%87%E8%82%8B%E8%86%9C/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch20_%E5%85%88%E5%A4%A9%E6%80%A7%E5%BF%83%E8%87%9F%E7%97%85/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch21_%E5%BE%8C%E5%A4%A9%E6%80%A7%E5%BF%83%E8%87%9F%E7%97%85/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch22_%E8%83%B8%E4%B8%BB%E5%8B%95%E8%84%88%E7%98%A4%E8%88%87%E4%B8%BB%E5%8B%95%E8%84%88%E5%89%9D%E9%9B%A2/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch23_%E5%8B%95%E8%84%88%E7%96%BE%E7%97%85/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch24_%E9%9D%9C%E8%84%88%E8%88%87%E6%B7%8B%E5%B7%B4%E7%96%BE%E7%97%85/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch25_%E9%A3%9F%E9%81%93%E8%88%87%E6%A9%AB%E8%86%88%E8%86%9C%E7%96%9D%E6%B0%A3/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch26_%E8%83%83/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch27_%E8%82%A5%E8%83%96%E5%A4%96%E7%A7%91%E6%B2%BB%E7%99%82/</loc>
+  </url><url>
+    <loc>/schwartz/schwartz/ch28_%E5%B0%8F%E8%85%B8/</loc>
   </url><url>
     <loc>/schwartz/schwartz/ch29_%E7%B5%90%E8%85%B8%E7%9B%B4%E8%85%B8%E8%82%9B%E9%96%80/</loc>
   </url><url>
@@ -96,27 +116,7 @@
   </url><url>
     <loc>/schwartz/schwartz/ch54_%E7%B6%B2%E8%B7%AF%E6%95%99%E8%82%B2%E8%88%87%E7%A4%BE%E7%BE%A4%E5%AA%92%E9%AB%94/</loc>
   </url><url>
-    <loc>/schwartz/schwartz/ch19_%E8%83%B8%E5%A3%81%E8%82%BA%E7%B8%B1%E9%9A%94%E8%88%87%E8%82%8B%E8%86%9C/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch20_%E5%85%88%E5%A4%A9%E6%80%A7%E5%BF%83%E8%87%9F%E7%97%85/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch21_%E5%BE%8C%E5%A4%A9%E6%80%A7%E5%BF%83%E8%87%9F%E7%97%85/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch22_%E8%83%B8%E4%B8%BB%E5%8B%95%E8%84%88%E7%98%A4%E8%88%87%E4%B8%BB%E5%8B%95%E8%84%88%E5%89%9D%E9%9B%A2/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch23_%E5%8B%95%E8%84%88%E7%96%BE%E7%97%85/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch24_%E9%9D%9C%E8%84%88%E8%88%87%E6%B7%8B%E5%B7%B4%E7%96%BE%E7%97%85/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch25_%E9%A3%9F%E9%81%93%E8%88%87%E6%A9%AB%E8%86%88%E8%86%9C%E7%96%9D%E6%B0%A3/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch26_%E8%83%83/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch27_%E8%82%A5%E8%83%96%E5%A4%96%E7%A7%91%E6%B2%BB%E7%99%82/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch28_%E5%B0%8F%E8%85%B8/</loc>
-  </url><url>
-    <loc>/schwartz/schwartz/ch09_%E5%82%B7%E5%8F%A3%E7%99%92%E5%90%88/</loc>
+    <loc>/schwartz/categories/</loc>
   </url><url>
     <loc>/schwartz/schwartz/</loc>
   </url><url>
